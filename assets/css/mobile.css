@@ -92,4 +92,21 @@
     .desktop-nav {
         display: none;
     }
+
+    /* Remove code if breaking mobile site */
+    .menu-controls-wrap .social {
+        text-align: left !important;
+        padding-left: 20px;
+    }
+    
+    .wsite-social {
+        margin-left: 0;
+        text-align: left !important;
+    }
+    
+    .wsite-social-item {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
 } 
