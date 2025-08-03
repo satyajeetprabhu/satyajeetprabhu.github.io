@@ -1,0 +1,61 @@
+/* Minimal Social Icons CSS - LinkedIn & Email Only */
+
+/* Local Social Font */
+@font-face {
+    font-family: "wsocial";
+    src: url("../fonts/wSocial/wsocial.eot");
+    src: url("../fonts/wSocial/wsocial.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/wSocial/wsocial.woff") format("woff"),
+         url("../fonts/wSocial/wsocial.ttf") format("truetype"),
+         url("../fonts/wSocial/wsocial.svg#wsocial") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Base Social Item Styles */
+.wsite-social-item {
+    display: inline;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    background-image: none;
+    background-repeat: no-repeat;
+    text-transform: none;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.wsite-social-item:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.wsite-social-item:before,
+.wsite-social-item:after {
+    font-family: "wsocial";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* LinkedIn Styles */
+.wsite-social-linkedin:before {
+    content: "\e602";
+    color: #388abe;
+}
+
+/* Email Styles */
+.wsite-social-mail:before {
+    content: "\e603";
+    color: #363b3e;
+}
+
+/* Hide unused social items */
+.wsite-social-item.hidden {
+    display: none !important;
+}

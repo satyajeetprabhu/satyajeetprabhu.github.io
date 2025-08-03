@@ -1,0 +1,138 @@
+/* News Cycle Font */
+@font-face {
+  font-family: 'News Cycle';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/News_Cycle/regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/News_Cycle/regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/News_Cycle/regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/News_Cycle/regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/News_Cycle/regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'News Cycle';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/News_Cycle/bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/News_Cycle/bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/News_Cycle/bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/News_Cycle/bold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/News_Cycle/bold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+/* Molengo Font */
+@font-face {
+  font-family: 'Molengo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Molengo/regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Molengo/regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Molengo/regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Molengo/regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Molengo/regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+
+
+/* Advent Pro Font */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Advent_Pro/regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Advent_Pro/regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Advent_Pro/regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Advent_Pro/regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Advent_Pro/regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+/* Quicksand Font */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/Quicksand/light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Quicksand/light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Quicksand/light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Quicksand/light.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Quicksand/light.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Quicksand/regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Quicksand/regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Quicksand/regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Quicksand/regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Quicksand/regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Quicksand/bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Quicksand/bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Quicksand/bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Quicksand/bold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Quicksand/bold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+/* Yanone Kaffeesatz Font */
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/Yanone_Kaffeesatz/extralight.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Yanone_Kaffeesatz/extralight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Yanone_Kaffeesatz/extralight.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Yanone_Kaffeesatz/extralight.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Yanone_Kaffeesatz/extralight.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/Yanone_Kaffeesatz/light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Yanone_Kaffeesatz/light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Yanone_Kaffeesatz/light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Yanone_Kaffeesatz/light.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Yanone_Kaffeesatz/light.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Yanone_Kaffeesatz/regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Yanone_Kaffeesatz/regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Yanone_Kaffeesatz/regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Yanone_Kaffeesatz/regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Yanone_Kaffeesatz/regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Yanone_Kaffeesatz/bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Yanone_Kaffeesatz/bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Yanone_Kaffeesatz/bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Yanone_Kaffeesatz/bold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Yanone_Kaffeesatz/bold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "wsocial";
+  src: url("../fonts/wSocial/wsocial.eot");
+  src: url("../fonts/wSocial/wsocial.eot#iefix") format("embedded-opentype"),
+       url("../fonts/wSocial/wsocial.woff") format("woff"),
+       url("../fonts/wSocial/wsocial.ttf") format("truetype"),
+       url("../fonts/wSocial/wsocial.svg#wsocial") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://satyajeetprabhu.com/sitemap.xml
+
+# Disallow system files
+Disallow: /.git/
+Disallow: /.DS_Store 

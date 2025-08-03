@@ -1,0 +1,720 @@
+/* ================================
+   PAGE-SPECIFIC STYLES
+   ================================ */
+
+/* ================================
+   INDEX PAGE STYLES
+   ================================ */
+
+/* About Image */
+.about-image img {
+  width: 80%; /* scale to 80% of container */
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 320px; /* 80% of previous 400px */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* optional: subtle shadow */
+  border: 4px solid #fff; /* optional: white border */
+}
+
+.about-image {
+  padding-right: 0;
+}
+
+/* Global iPad-specific rule */
+@media (min-device-width: 768px) and (max-device-width: 1366px) {
+  .about-image {
+    padding-right: 4rem;
+  }
+  .about-image img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-image img {
+    width: 50%;
+    max-width: 100%;
+  }
+}
+
+/* ================================
+   WORK PAGE STYLES
+   ================================ */
+
+/* Work Section Layout */
+.work-section {
+    margin: 0 0 1rem 0;
+}
+
+
+
+.work-title {
+    font-family: var(--font-display);
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.work-item {
+    background: #fff;
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 700px;
+    margin: 1rem auto;
+    box-sizing: border-box;
+}
+
+.work-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.work-item h3 {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.work-item p {
+    font-family: var(--font-base);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.work-item .work-description {
+    font-family: var(--font-base);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Video Containers */
+.video-container {
+    position: relative;
+    width: 100%; /* Full width by default */
+    max-width: 600px; /* Start with smaller max-width */
+    height: 0;
+    padding-bottom: 56.25% !important; /* 16:9 aspect ratio */
+    padding-top: 30px; /* Account for YouTube's interface elements */
+    margin: 2rem auto; /* Center the container */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.work-item .video-container {
+    margin: 1rem auto;
+    max-width: 100%;
+    transform: none;
+}
+
+/* ================================
+   MUSIC PAGE STYLES
+   ================================ */
+
+.music-section {
+    margin: 0 0 1rem 0;
+}
+
+.music-title {
+    font-family: var(--font-display);
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.music-description {
+    font-family: var(--font-base);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.music-description a {
+    color: #007acc !important;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+    font-family: var(--font-base) !important;
+    font-size: 20px;
+    text-decoration: none !important;
+}
+
+.music-description a:hover {
+    border-bottom-color: #007acc;
+    opacity: 1;
+}
+
+.music-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 1rem 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.music-item {
+    background: #fff;
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 700px;
+    margin: 1rem auto;
+    box-sizing: border-box;
+}
+
+.music-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.music-item h3 {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.music-item p {
+    font-family: var(--font-base);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.music-item .music-description {
+    font-family: var(--font-base);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.music-item iframe {
+    border-radius: 8px;
+    margin: 0;
+}
+
+/* Music Embeds */
+.music-embed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.music-embed:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.music-embed iframe {
+    border-radius: 12px;
+    width: 100% !important;
+    max-width: 100%;
+    height: 480px !important; /* Adjust this value to change height */
+}
+
+.music-item .music-embed {
+    margin: 1rem auto;
+    max-width: 100%;
+    transform: none;
+}
+
+/* SoundCloud Embeds */
+.soundcloud-embed {
+    margin: 1rem auto;
+    max-width: 100%;
+    transform: none;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.soundcloud-embed iframe {
+    width: 100%;
+    border-radius: 8px;
+    height: 120px; /* Default height for desktop */
+}
+
+/* Performance Images */
+.performance-image {
+    text-align: center;
+    margin: 1rem auto;
+    max-width: 100%;
+    transform: none;
+}
+
+.performance-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.performance-image img:hover {
+    transform: scale(1.02);
+}
+
+/* Live Images */
+.live-image {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.live-image img {
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Video Wrappers */
+.music-item .video-wrapper {
+    margin: 1rem auto;
+    max-width: 100%;
+    transform: none;
+}
+
+.music-item .video-container {
+    margin: 1rem auto;
+    max-width: 100%;
+    transform: none;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+/* ================================
+   TECH PAGE STYLES
+   ================================ */
+
+.tech-section {
+    margin: 0 0 1rem 0;
+}
+
+.tech-title {
+    font-family: var(--font-display);
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.tech-description {
+    font-family: var(--font-base);
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tech Descriptions */
+.tech-description a {
+    color: #007acc !important;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+    font-family: var(--font-base) !important;
+    text-decoration: none !important;
+}
+
+.tech-description a:hover {
+    border-bottom-color: #007acc;
+    opacity: 1;
+}
+
+
+.tech-item {
+    background: #fff;
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 700px;
+    margin: 1rem auto;
+    box-sizing: border-box;
+}
+
+/* Publication items with custom top/bottom padding */
+.publication-item {
+    text-align: center;
+    padding-top: 1rem;    /* 1rem top padding */
+    padding-bottom: 1rem; /* 1rem bottom padding */
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.tech-item h3 {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.tech-item .subtitle {
+    font-family: var(--font-base);
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.tech-item p {
+    font-family: var(--font-base);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+
+
+.tech-item img {
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tech Images */
+.tech-image {
+    margin: 0.5rem 0 0 0;
+    text-align: center;
+}
+
+.tech-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.tech-image a {
+    display: inline-block;
+}
+
+/* Publication Items */
+.publication-item {
+    text-align: center;
+}
+
+.presentation-item {
+    text-align: center;
+}
+
+.presentation-item .tech-image img {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* GitHub Items */
+.github-item {
+    background: linear-gradient(135deg, #24292e 0%, #2f363d 100%);
+    color: #fff;
+}
+
+.github-item h3 {
+    color: #fff;
+}
+
+.github-item .tech-image img {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    max-width: 120px;
+    height: auto;
+}
+
+.github-item .tech-image img {
+    max-width: 15%;
+    margin: 0 auto;
+    display: block;
+}
+
+.github-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(36, 41, 46, 0.3);
+}
+
+/* MaxForLive Items */
+.maxforlive-item {
+    background: linear-gradient(135deg, #ff6b35 0%, #ff8e53 100%);
+    color: #fff;
+}
+
+.maxforlive-item h3 {
+    color: #fff;
+}
+
+.maxforlive-item .tech-image img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.maxforlive-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(255, 107, 53, 0.3);
+}
+
+/* ================================
+   RESPONSIVE STYLES
+   ================================ */
+
+/* Tablet and Mobile Responsive */
+@media (max-width: 768px) {
+    /* Global title adjustments */
+    .work-title,
+    .music-title,
+    .tech-title {
+        font-size: 24px;
+    }
+    
+    /* Work page responsive */
+    .work-item h3 {
+        font-size: 18px;
+    }
+    
+    .tech-item h3 {
+        font-size: 18px;
+    }
+    
+    .work-item .work-description,
+    .tech-description {
+        font-size: 20px !important;
+        padding: 0 1rem;
+    }
+    
+    .music-description {
+        font-size: 20px !important;
+    }
+    
+    .music-description a {
+        font-size: 18px !important;
+    }
+    
+    .work-item,
+    .music-item,
+    .tech-item {
+        padding: 1.5rem;
+    }
+    
+    /* Video container responsive */
+    .video-container {
+        margin: 1.5rem 0;
+        max-width: 100%; /* Full width on mobile */
+        padding-bottom: 56.25%; /* Maintain 16:9 ratio */
+        border-radius: 8px; /* Smaller radius on mobile */
+    }
+    
+    /* Music page responsive */
+    .music-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .music-embed {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .music-embed iframe {
+        width: 100%;
+        height: 480px !important; /* Better height for mobile */
+        width: 80% !important; /* Scale down width on mobile */
+        max-width: 80%;
+    }
+    
+    .soundcloud-embed iframe {
+        height: 120px !important; /* Height for tablets */
+    }
+    
+    /* Tech page responsive */
+    .publication-item {
+        padding: 1.5rem;
+        padding-top: 1rem;    /* 1rem top padding on tablets */
+        padding-bottom: 1rem; /* 1rem bottom padding on tablets */
+        text-align: center;
+    }
+    
+    .presentation-item .tech-image img {
+        max-width: 90%;
+    }
+    
+    .maxforlive-item .tech-image img {
+        max-width: 100%;
+    }
+    
+    .github-item .tech-image img {
+        max-width: 20%;
+    }
+}
+
+/* Small Mobile Responsive */
+@media (max-width: 480px) {
+    .work-title,
+    .music-title,
+    .tech-title {
+        font-size: 24px;
+    }
+    
+    .work-item h3 {
+        font-size: 16px;
+    }
+    
+    .tech-item h3 {
+        font-size: 16px;
+    }
+    
+    .work-item .work-description,
+    .tech-description {
+        font-size: 18px !important;
+    }
+    
+    .music-description {
+        font-size: 18px !important;
+    }
+    
+    .music-description a {
+        font-size: 18px !important;
+    }
+    
+    .work-item,
+    .music-item,
+    .tech-item {
+        padding: 1rem;
+    }
+    
+    .music-embed iframe {
+        width: 100%;
+    }
+    
+    .soundcloud-embed iframe {
+        height: 120px !important; /* Minimum height for mobile */
+    }
+}
+
+/* Work item specific mobile adjustments */
+@media (max-width: 600px) {
+    .work-item {
+        padding: 1rem 1rem;
+        max-width: 98vw;
+    }
+    
+    .music-item {
+        padding: 1rem 1rem;
+        max-width: 98vw;
+    }
+    
+    .tech-item {
+        padding: 1rem 1rem;
+        max-width: 98vw;
+    }
+}
+
+/* Larger screen adjustments for video containers */
+@media (min-width: 768px) {
+    .video-container {
+        max-width: 700px; /* Scale up for tablets */
+        transform: scale(0.8); /* Scale down to 80% */
+        transform-origin: center center; /* Scale from center */
+        margin: 2.5rem auto; /* Increase margin to account for scaling */
+    }
+}
+
+@media (min-width: 1024px) {
+    .video-container {
+        max-width: 800px; /* Scale up for landscape tablets */
+        transform: scale(0.9); /* Scale down to 90% */
+        margin: 2rem auto; /* Normal margin */
+    }
+}
+
+@media (min-width: 1200px) {
+    .video-container {
+        max-width: 900px; /* Scale up for desktop */
+        transform: scale(0.9); /* Scale down to 90% */
+    }
+}
+
+@media (min-width: 1400px) {
+    .video-container {
+        max-width: 1000px; /* Scale up for large screens */
+        transform: scale(0.9); /* Scale down to 90% */
+    }
+}
+
+@media (min-width: 1600px) {
+    .video-container {
+        max-width: 1100px; /* Scale up for extra large screens */
+        transform: scale(0.9); /* Scale down to 90% */
+    }
+}
